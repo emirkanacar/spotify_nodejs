@@ -72,7 +72,7 @@ module.exports = {
         }
 
         let options = {};
-        options.url = '	https://api.spotify.com/v1/artists/' + data.artistID + '/related-artists';
+        options.url = 'https://api.spotify.com/v1/artists/' + data.artistID + '/related-artists';
         
         request('GET', options, callback)
     }
