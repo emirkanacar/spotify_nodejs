@@ -8,3 +8,4 @@ exports.browse = require('./lib/browse');
 exports.me = require('./lib/me');
 exports.player = require('./lib/player');
 exports.search = require('./lib/search');
+exports.track = require('./lib/track');
