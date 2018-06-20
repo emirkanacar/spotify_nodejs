@@ -238,5 +238,22 @@ module.exports = {
         options.url = 'https://api.spotify.com/v1/me';
 
         request('GET', options, callback)
+    },
+
+    followPlaylist: (data, callback) => {
+        if(!data.user_id)
+        {
+            callback('user_id required')
+        }
+
+        if(!data.playlist_id)
+        {
+            callback('playlist_id required')
+        }
+
+        let options = {};
+        options.url = 'https://api.spotify.com/v1/users/' + data.user_id + '/playlists/' + data.playlist_id + '/followers';
+
+        request('PUT', options, callback)
     }
 }
