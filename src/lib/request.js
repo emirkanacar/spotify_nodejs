@@ -13,7 +13,7 @@ module.exports = (method, data, callback) =>
 
     let options = {
         url: data.url,
-        method: data.method,
+        method: method,
         headers: {
             'Authorization': 'Bearer ' + accessToken
         }
