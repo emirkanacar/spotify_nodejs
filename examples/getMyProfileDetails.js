@@ -1,4 +1,4 @@
-var spotify = require('./src/index');
+var spotify = require('spotifyapi_web_nodejs');
 
 spotify.accessToken = 'access_token';
 
