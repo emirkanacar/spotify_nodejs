@@ -11,7 +11,7 @@ module.exports = {
 
         if(!data.type)
         {
-            callback('query required')
+            callback('type required')
         }
 
         if(data.limit == null || data.limit == undefined)
