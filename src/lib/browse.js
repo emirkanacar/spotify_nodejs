@@ -71,5 +71,17 @@ module.exports = {
         options.url = 'https://api.spotify.com/v1/browse/categories/' + data.category_id + '/playlists';
 
         request('GET', options, callback)
+    },
+
+    Recommendations: (data, callback) => {
+        if(!data.limit)
+        {
+            callback('limit is required')
+        }
+
+        let options = {};
+        options.url = 'https://api.spotify.com/v1/recommendations?limit=' + data.limit;
+
+        request('GET', options, callback)
     }
 }
