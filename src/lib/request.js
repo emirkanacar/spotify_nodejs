@@ -15,7 +15,9 @@ module.exports = (method, data, callback) =>
         url: data.url,
         method: method,
         headers: {
-            'Authorization': 'Bearer ' + accessToken
+            'Authorization': 'Bearer ' + accessToken,
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
         }
     };
 
