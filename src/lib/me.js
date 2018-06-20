@@ -182,7 +182,7 @@ module.exports = {
         request('PUT', options, callback)   
     },
 
-    addSavedTracks: (data, callback) => {
+    addSavedAlbums: (data, callback) => {
         if(!data.ids)
         {
             callback('ids required')
