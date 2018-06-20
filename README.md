@@ -1,10 +1,6 @@
-# spotify_nodejs
-Spotify API for npm
+# Package:  spotify_nodejs
+Spotify Web API for npm
 
-usage
+How to use ?
 
->npm init
-
->const spotify = require('./src/index')
-
-document coming soon
+You need the visit wiki!
