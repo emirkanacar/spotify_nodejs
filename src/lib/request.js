@@ -25,7 +25,16 @@ module.exports = (method, data, callback) =>
         }
         try {
             if(body.length == 0) {
-                return callback({ statusCode: res,statusCode });
+                if(res.statusCode == 204)
+                {
+                    return callback({
+                        statusCode: res.statusCode,
+                        message: 'No content'
+                    })
+                }else {
+                    return callback({ statusCode: res.statusCode });
+                }
+                
             }
             callback(null, JSON.parse(body));
         } catch(err) {
