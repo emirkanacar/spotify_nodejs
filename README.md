@@ -1,7 +1,8 @@
 # Package:  spotify_nodejs
 Spotify Web API for npm
 
-for install : > npm i spotifyapi_web_nodejs
+For install: 
+>npm install -g spotifyapi_web_nodejs
 
 How to use ?
 
