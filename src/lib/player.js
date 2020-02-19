@@ -54,7 +54,7 @@ module.exports = {
     },
 
     playerSeekPosition: (data, callback) => {
-        if(data.position_ms)
+        if(!data.position_ms)
         {
             callback('position_ms required!')
         }
